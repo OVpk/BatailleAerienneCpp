@@ -1,5 +1,6 @@
 #pragma once
-class Unit {
+#include "Cell.h"
+class Unit : public Cell{
 public:
 	virtual void move() = 0;
 };

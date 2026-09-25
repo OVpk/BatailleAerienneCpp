@@ -38,7 +38,7 @@ bool Grid::setCellule(int row, int collumn, Cell* nouvelleCellule)
 {
 	if (IsCellValide(row, collumn)) 
 	{
-		if (tab[row][collumn] == nullptr) {
+		if (tab[row][collumn] != nullptr) {
 			delete tab[row][collumn];
 		}
 		tab[row][collumn] = nouvelleCellule;

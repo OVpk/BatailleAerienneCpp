@@ -123,26 +123,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Building.cpp" />
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
-    <ClCompile Include="Drone.cpp" />
     <ClCompile Include="GameManager.cpp" />
-    <ClCompile Include="Grid.cpp" />
     <ClCompile Include="GridRenderer.cpp" />
-    <ClCompile Include="Plane.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Prop.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Building.h" />
     <ClInclude Include="Cell.h" />
-    <ClInclude Include="Drone.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="GridRenderer.h" />
-    <ClInclude Include="Plane.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Prop.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
