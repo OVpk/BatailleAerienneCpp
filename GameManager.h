@@ -1,7 +1,6 @@
 #pragma once
 #include "Grid.h"
 #include "GridRenderer.h"
-#include "Unit.h"
 #include "Player.h"
 
 #define ROUGE   "\033[31m"
@@ -10,7 +9,9 @@
 class GameManager
 {
 public:
-	Grid<Cell, 10, 10> grille;
+	Grid<Cell, 10, 10> grilleFacile;
+	Grid<Cell, 15, 15> grilleNormale;
+	Grid<Cell, 20, 20> grilleDifficile;
 	GridRenderer* renderer = new GridRenderer();
 
 	Player* P1 = new Player(BLEU);
