@@ -1,13 +1,6 @@
-#include <iostream>
-#include <random>
+#include "GameAppManager.h"
 
-int main() {
-
-	
-
-	GridRenderer* renderer = new GridRenderer();
-
-	renderer->DrawGrid(grille);
-
-	return 0;
+int main()
+{
+	return GameAppManager::GetInstance().Run();
 }

@@ -2,22 +2,23 @@
 #include "Player.h"
 #include "IRenderableCell.h"
 
-class Target : public IRenderableCell
+class Target : public GridSystem::IRenderableCell
 {
 private:
-	char symbol = 'T';
+	const char symbol;
 	const Player* owner;
 
 public:
-	Target(Player* p_owner) : owner(p_owner) {}
+	Target(Player* p_owner, char p_symbol = 'T') :
+		owner(p_owner), symbol(p_symbol) {}
 
-	~Target() override {}
+	~Target() override = default;
 
 
 	const Player* GetOwner() const { return owner; };
 
-	char getSymbol() const override { return symbol; }
-	std::string_view getColor() const override { return owner->color; }
+	char getSymbol() const override final {return symbol;}
+	std::string_view getColor() const override {return owner->color;}
 
 };
 
