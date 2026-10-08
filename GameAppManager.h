@@ -48,7 +48,6 @@ public:
 
 	int Run();
 
-
 	void StartNewGame(Difficulty difficulty);
 };
 

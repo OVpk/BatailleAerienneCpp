@@ -129,13 +129,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
-    <ClCompile Include="Drone.cpp" />
     <ClCompile Include="GameInstance.cpp" />
     <ClCompile Include="GameAppManager.cpp" />
-    <ClCompile Include="Plane.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Target.cpp" />
-    <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drone.h" />

@@ -3,6 +3,9 @@
 #include "GridRenderer.h"
 #include "Player.h"
 #include "Target.h"
+#include "Unit.h"
+
+//#define DEV_MODE
 
 class GameInstance
 {
@@ -17,6 +20,10 @@ private:
 	Player& p2;
 
 	void InitBoard();
+	bool SelectActionMenu(Target* target, Player* currentPlayer, int row, int collumn);
+	void Analyse(Target* target, bool isOwner) const;
+	bool Move(Unit* unit, int startRow, int startCollumn);
+	bool Attack(Unit* unit, int startRow, int startCollumn);
 
 	template<typename T>
 	void SpawnTargetsRandom(int count, Player* owner);
